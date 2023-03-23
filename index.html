@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mtt lab3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">mtt lab 3</h1>
+    <div class="Row">
+      <div class="Column">
+        <p style="text-align: center; font-size: 26px">American psycho</p>
+        <div class="slideshow-container">
+          <div class="mySlides1 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="American_Psycho_1.jpg" style="width: 100%" />
+            <div class="text">Patrick Bateman</div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="American_Psycho_2.jpg" style="width: 100%" />
+            <div class="text">Another Patrick Bateman</div>
+          </div>
+
+          <div class="mySlides1 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="American_Psycho_3.jpg" style="width: 100%" />
+            <div class="text">Just American Psycho</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1,0)">❮</a>
+          <a class="next" onclick="plusSlides(1,0)">❯</a>
+        </div>
+        <p style="text-align: center">
+          <button onclick="toggleTimer1()" id="timeBtn1">Start timer</button>
+          <button id="speedBtn1" onclick="changeSpeed1()">Speed</button>
+          <span id="timerText1">1 second</span>
+        </p>
+      </div>
+      <div class="Column">
+        <p style="text-align: center; font-size: 26px">Fight Club</p>
+        <div class="slideshow-container">
+          <div class="mySlides2 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Fight_Club_1.jpeg" style="width: 100%" />
+            <div class="text">Tyler Durden</div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Fight_Club_2.jpg" style="width: 100%" />
+            <div class="text">Marla</div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Fight_Club_3.jpg" style="width: 100%" />
+            <div class="text">Edward Norton</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+          <a class="next" onclick="plusSlides(1,1)">❯</a>
+        </div>
+        <p style="text-align: center">
+          <button onclick="toggleTimer2()" id="timeBtn2">Start timer</button>
+          <button id="speedBtn2" onclick="changeSpeed2()">Speed</button>
+          <span id="timerText2">1 second</span>
+        </p>
+      </div>
+      <div class="Column">
+        <p style="text-align: center; font-size: 26px">Taxi Driver</p>
+        <div class="slideshow-container">
+          <div class="mySlides3 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Taxi_Driver_1.jpg" style="width: 100%" />
+            <div class="text">Robert De Niro</div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Taxi_Driver_2.jpg" style="width: 100%" />
+            <div class="text">Travis Bickle</div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Taxi_Driver_3.jpg" style="width: 100%" />
+            <div class="text">Taxi Driver</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1,2)">❮</a>
+          <a class="next" onclick="plusSlides(1,2)">❯</a>
+        </div>
+        <p style="text-align: center">
+          <button onclick="toggleTimer3()" id="timeBtn3">Start timer</button>
+          <button id="speedBtn3" onclick="changeSpeed3()">Speed</button>
+          <span id="timerText3">1 second</span>
+        </p>
+      </div>
+    </div>
+    <p id="nowPlaying"></p>
+    <canvas id="canvas" style="width: 500px"></canvas>
+    <audio
+      crossorigin="anonymous"
+      id="audio"
+      src="dxrk_-_rave_muzati.net.mp3"
+      controls
+    ></audio>
+    <div id="buttons">
+      <button id="pixies">Where is my mind</button>
+      <button id="perfectGirl">Perfect Girl</button>
+      <button id="inMyHead">In My Head</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="audio.js"></script>
+  </body>
+</html>
